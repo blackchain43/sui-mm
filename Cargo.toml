@@ -1,0 +1,42 @@
+[package]
+name = "mm_tool"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+clap = "4.0.22"
+rand = "0.8.4"
+tokio = "1.28.1"
+sui = {path="../../sui/crates/sui"}
+sui-sdk = { path="../../sui/crates/sui-sdk" }
+sui-types = { path="../../sui/crates/sui-types" }
+sui-config = {path="../../sui/crates/sui-config"}
+sui-keys = {  path = "../../sui/crates/sui-keys" }
+sui-json-rpc-types = {  path = "../../sui/crates/sui-json-rpc-types" }
+shared-crypto = { path = "../../sui/crates/shared-crypto" }
+move-core-types = { path = "../../sui/external-crates/move/move-core/types" }
+chrono={version = "0.4.23",features = ["serde"]}
+serde = { version = "1", features = ["derive"] }
+futures = "0.3"
+async-trait = "0.1.60"
+home="0.5.4"
+csv="1.1.6"
+serde_yaml = "0.9.14"
+serde_json="~1"
+env_logger="0.10.0"
+anyhow = "1.0.44"
+log = "0.4.16"
+thiserror = "1.0.38"
+tokio-cron-scheduler = "0.9.1"
+fastcrypto = { git = "https://github.com/MystenLabs/fastcrypto", rev = "c27e87fb539c88b6fe1eac7dd82561254bb1e07a" }
+num_enum="0.6.0"
+axum= {version="0.6.1",features = ["ws", "headers"] }
+sled="0.34.7"
+futures-util = { version = "0.3", default-features = false, features = ["sink", "std"] }
+tokio-tungstenite = {version = "*",features = ["native-tls"]}
+flume="0.10.14"
+tower-http = { version = "0.4.0", features = ["trace"] }
+tower = { version = "0.4", features = ["util", "timeout", "load-shed", "limit"] }
+cached="0.42.0"
+dashmap="5.4.0"
+influxdb2_client= {path="../../influxdb_iox/influxdb2_client"}
